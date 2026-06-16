@@ -6,8 +6,11 @@ Homebrew tap for [twagger](https://github.com/valVK/twagger) — a TUI Swagger/O
 
 ```bash
 brew tap valVK/twagger
+brew trust valVK/twagger
 brew install twagger
 ```
+
+> Homebrew requires explicit trust for third-party taps before loading their formulas. `brew trust` only needs to be run once.
 
 ## Usage
 
