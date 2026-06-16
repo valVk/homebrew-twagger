@@ -12,6 +12,7 @@ class Twagger < Formula
     system "npm", "run", "build"
     system "npm", "prune", "--omit=dev"
     libexec.install Dir["*"]
+    chmod 0755, libexec/"dist/index.js"
     bin.install_symlink libexec/"dist/index.js" => "twagger"
   end
 
