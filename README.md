@@ -1,4 +1,4 @@
-# homebrew-twagger
+# Homebrew TUIagger
 
 Homebrew tap for [tuiagger](https://github.com/valVK/tuiagger) — a TUI Swagger/OpenAPI documentation viewer.
 
