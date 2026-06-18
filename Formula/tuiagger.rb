@@ -1,8 +1,8 @@
 class Tuiagger < Formula
   desc "TUI Swagger/OpenAPI Documentation Viewer"
   homepage "https://github.com/valVK/twagger"
-  url "https://github.com/valVK/twagger/archive/refs/tags/v1.0.5.tar.gz"
-  sha256 "c660b4da1cc628e8ee709072e3ece4ff2d9256df100bacb44a66977d5ef93c76"
+  url "https://github.com/valVK/tuiagger/archive/refs/tags/v1.0.6.tar.gz"
+  sha256 "302429e3f2a5787d32cdbcb48e098cec283c7ce8d092fc82a5f7ca2e100d22bc"
   license "MIT"
 
   depends_on "node"
