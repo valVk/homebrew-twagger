@@ -1,13 +1,13 @@
 # homebrew-twagger
 
-Homebrew tap for [twagger](https://github.com/valVK/twagger) — a TUI Swagger/OpenAPI documentation viewer.
+Homebrew tap for [tuiagger](https://github.com/valVK/tuiagger) — a TUI Swagger/OpenAPI documentation viewer.
 
 ## Install
 
 ```bash
-brew tap valVK/twagger
-brew trust valVK/twagger
-brew install twagger
+brew tap valVK/tuiagger
+brew trust valVK/tuiagger
+brew install tuiagger
 ```
 
 > Homebrew requires explicit trust for third-party taps before loading their formulas. `brew trust` only needs to be run once.
@@ -16,37 +16,37 @@ brew install twagger
 
 ```bash
 # Load from a saved collection
-twagger <collection-name>
+tuiagger <collection-name>
 
 # Load from a local file
-twagger ./openapi.json
+tuiagger ./openapi.json
 
 # Load from a URL
-twagger https://petstore3.swagger.io/api/v3/openapi.json
+tuiagger https://petstore3.swagger.io/api/v3/openapi.json
 
 # List saved collections
-twagger --list
+tuiagger --list
 ```
 
 ## Collections
 
-Collections are stored in `~/.twagger/<name>/`. Drop an `openapi.json` (or `.yaml`) file there:
+Collections are stored in `~/.tuiagger/<name>/`. Drop an `openapi.json` (or `.yaml`) file there:
 
 ```bash
-mkdir -p ~/.twagger/MyAPI
-cp openapi.json ~/.twagger/MyAPI/
-twagger MyAPI
+mkdir -p ~/.tuiagger/MyAPI
+cp openapi.json ~/.tuiagger/MyAPI/
+tuiagger MyAPI
 ```
 
 ## Update
 
 ```bash
-brew upgrade twagger
+brew upgrade tuiagger
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall twagger
-brew untap valVK/twagger
+brew uninstall tuiagger
+brew untap valVK/tuiagger
 ```

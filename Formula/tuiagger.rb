@@ -1,4 +1,4 @@
-class Twagger < Formula
+class Tuiagger < Formula
   desc "TUI Swagger/OpenAPI Documentation Viewer"
   homepage "https://github.com/valVK/twagger"
   url "https://github.com/valVK/twagger/archive/refs/tags/v1.0.5.tar.gz"
@@ -13,10 +13,10 @@ class Twagger < Formula
     system "npm", "prune", "--omit=dev"
     libexec.install Dir["*"]
     chmod 0755, libexec/"dist/index.js"
-    bin.install_symlink libexec/"dist/index.js" => "twagger"
+    bin.install_symlink libexec/"dist/index.js" => "tuiagger"
   end
 
   test do
-    assert_match "TUI Swagger", shell_output("#{bin}/twagger --help 2>&1")
+    assert_match "TUI Swagger", shell_output("#{bin}/tuiagger --help 2>&1")
   end
 end
